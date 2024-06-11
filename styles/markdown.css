@@ -1,4 +1,4 @@
-/* main {
+main {
   @apply flex
     w-full
     flex-col
@@ -59,10 +59,10 @@
   }
 
   code {
-    @apply rounded
+    @apply font-mono
+      rounded
       bg-neutral-100
       px-1
-      font-mono
       text-base
       font-semibold
       text-neutral-900
@@ -78,15 +78,15 @@
   a,
   .anchor {
     @apply text-green-600
-      dark:text-green-400
-      xs:font-semibold;
+      xs:font-semibold
+      dark:text-green-400;
 
     &:hover {
       @apply text-green-900
         dark:text-green-300;
     }
 
-    &[role="button"] {
+    &[role='button'] {
       @apply xs:font-regular;
     }
 
@@ -142,10 +142,10 @@
         px-4
         py-2
         text-neutral-900
-        dark:border-neutral-800
-        dark:text-white
         xs:block
-        xs:border-l-0;
+        xs:border-l-0
+        dark:border-neutral-800
+        dark:text-white;
 
       > a {
         @apply pr-2;
@@ -169,4 +169,4 @@
       @apply sm:border-l-0;
     }
   }
-} */
+}
